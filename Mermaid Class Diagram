@@ -1,0 +1,54 @@
+classDiagram
+    %% Class Relations
+    HomePage <|-- Server
+    Server <|-- Channels
+    Channels o-- Transactions
+    Server <|-- TalbeofDebts
+    User -- HomePage
+    HomePage <|-- PieChart
+    Channels --|> TalbeofDebts : data()
+    Server --o PieChart : data()
+    Server : +String serverName
+    Server : +String serverID
+    Server: +List members_list[usernames]
+    Server: +createChannel()
+    Server: +addMember(userID)
+    class HomePage{
+      +List Servers[]
+      +createServer()
+      +search(serverID)
+    }
+    class Channels{
+      +List transactions
+      +createTransaction()
+    }
+    class Transactions{
+      +int dateAndTime
+      +String note
+      +String payee
+      +int amount
+      +String location
+      +List users[]
+      +List userWeights[]
+      +enter()
+    }
+    class User{
+        +String username
+        #String userId
+        +servers()
+    }
+    class UML_Basic{
+      +attribute
+      +methods()
+    }
+    class TalbeofDebts{
+        +List usernames[]
+        +Graph debtsChart
+        +updateTable()
+    }
+    class PieChart{
+        +List servers
+        +int debts
+        +int credit
+        +updateTable()
+    }

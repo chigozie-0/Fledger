@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "147660741795",
+    "project_id": "fledger-team40",
+    "storage_bucket": "fledger-team40.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:147660741795:android:db257c1a083e771014b316",
+        "android_client_info": {
+          "package_name": "com.cmpt370.fledger"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzJ-bpOu9Gdk0_qnfUctruwCw79Av3N4k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,27 @@
+Want to commit your changes? Follow these simple instructions, and your code will end up on the main branch!
+
+1. Add and commit your changes to your current branch, then push the changes to the origin of your branch.
+   (Example used with the branch titled "Freddie")
+
+   git add ..
+   git commit -m "Commit Message"
+   git push origin Freddie
+
+2. Now create a merge request in GitLab.
+
+3. Go to Code and select "Merge Requests."
+
+4. Select "New Merge Request."
+
+5. Make sure "main" is the target branch and select the source branch to be the one you made your changes to.
+   Click "Compare Branches and Continue."
+
+6. Assign yourself as an assignee and add someone else as a reviewer.
+   MAKE SURE to deselect "Delete Source Branch" (This will delete your branch if you don't select it).
+   Click "Create Merge Request."
+
+If you ever want to get the most updated version of the app, input the following commands into the terminal.
+(MAKE SURE to commit your changes locally BEFORE doing so, "Freddie" is the example branch)
+
+git checkout Freddie
+git pull origin main
